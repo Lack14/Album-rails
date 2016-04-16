@@ -1,0 +1,8 @@
+   <%@albums.each do |album|%>
+     <%= link_to album do%>
+       <div class="elemento <%=album.color%>">
+         <h4 class="white-text text-center"><%=album.name%></h4>
+       </div>
+     <%end%>
+   <%end%>
+<%= link_to 'New Album',new_album_path %>
